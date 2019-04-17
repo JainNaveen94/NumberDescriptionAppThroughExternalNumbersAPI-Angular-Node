@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<input type="number" [(ngModel)] = "inputData">
+<button (click) = "getData()">Get Data</button>
+<h3>Data From Input Number</h3>
+<p>{{dataToPrint}}</p>
+<h3>Data From Server</h3>
+<div *ngFor="let i of resultFromServer">
+    <p>{{i}}</p>
+</div>
+
+<router-outlet></router-outlet>
